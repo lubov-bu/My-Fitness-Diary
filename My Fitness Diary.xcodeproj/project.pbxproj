@@ -13,6 +13,8 @@
 		903FCE3F283BCC2700A02DB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 903FCE3D283BCC2700A02DB0 /* Main.storyboard */; };
 		903FCE41283BCC2B00A02DB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 903FCE40283BCC2B00A02DB0 /* Assets.xcassets */; };
 		903FCE44283BCC2B00A02DB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 903FCE42283BCC2B00A02DB0 /* LaunchScreen.storyboard */; };
+		906839DD283F86A600F52968 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906839DC283F86A600F52968 /* MainViewController.swift */; };
+		906839E1283F95AD00F52968 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906839E0283F95AD00F52968 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		903FCE40283BCC2B00A02DB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		903FCE43283BCC2B00A02DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		903FCE45283BCC2B00A02DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		906839DC283F86A600F52968 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		906839E0283F95AD00F52968 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 		903FCE4B283BE0DD00A02DB0 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				906839DE283F958A00F52968 /* SignUp */,
 				903FCE4E283BE61700A02DB0 /* Main */,
 				903FCE4C283BE5E600A02DB0 /* LogIn */,
 			);
@@ -103,6 +108,23 @@
 		903FCE4F283BE6B800A02DB0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				906839DC283F86A600F52968 /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		906839DE283F958A00F52968 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				906839DF283F959800F52968 /* View */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		906839DF283F959800F52968 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				906839E0283F95AD00F52968 /* SignUpViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +203,8 @@
 				903FCE3C283BCC2700A02DB0 /* LogInViewController.swift in Sources */,
 				903FCE38283BCC2700A02DB0 /* AppDelegate.swift in Sources */,
 				903FCE3A283BCC2700A02DB0 /* SceneDelegate.swift in Sources */,
+				906839DD283F86A600F52968 /* MainViewController.swift in Sources */,
+				906839E1283F95AD00F52968 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

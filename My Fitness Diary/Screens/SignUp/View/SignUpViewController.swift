@@ -18,8 +18,12 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBOutlet weak var createProfileButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
     
     @IBAction func createProfile(_ sender: UIButton) {
+    }
+    
+    @IBAction func backToLogIn(_ sender: UIButton) {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

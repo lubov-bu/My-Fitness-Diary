@@ -113,7 +113,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="authorize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PsH-Bh-9bq"/>
-                                    <segue destination="tCp-pd-MLR" kind="show" id="WWS-3M-XxD"/>
+                                    <segue destination="pQz-yK-rI6" kind="show" id="WWS-3M-XxD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWD-t0-n9w">
@@ -163,26 +163,101 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="85.714285714285708"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Main-->
         <scene sceneID="Xzi-6w-RK4">
             <objects>
                 <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="tCp-pd-MLR" customClass="MainViewController" customModule="My_Fitness_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ujI-gA-tV1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My fitness diary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vK2-1a-ySK">
+                                <rect key="frame" x="89" y="20" width="236" height="42"/>
+                                <fontDescription key="fontDescription" name="Optima-Italic" family="Optima" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="AVw-9P-y8g"/>
                         <color key="backgroundColor" red="0.42352938649999999" green="0.79215681550000006" blue="0.69803923369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="vK2-1a-ySK" firstAttribute="top" secondItem="AVw-9P-y8g" secondAttribute="top" constant="20" id="43h-6L-caO"/>
+                            <constraint firstItem="vK2-1a-ySK" firstAttribute="centerX" secondItem="AVw-9P-y8g" secondAttribute="centerX" id="Sww-ZR-BrY"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Main" id="IAR-uy-YmV">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="VPU-4g-3LJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B2z-49-3fe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1419" y="86"/>
+            <point key="canvasLocation" x="2167" y="86"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="TEe-G1-L1Z">
+            <objects>
+                <viewController id="A5d-nd-QTy" customClass="ProfileViewController" customModule="My_Fitness_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xHq-0y-wJc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My fitness diary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgn-jT-feH">
+                                <rect key="frame" x="89" y="20" width="236" height="42"/>
+                                <fontDescription key="fontDescription" name="Optima-Italic" family="Optima" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jkU-fm-juW"/>
+                        <color key="backgroundColor" red="0.42352938649999999" green="0.79215681550000006" blue="0.69803923369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="rgn-jT-feH" firstAttribute="centerX" secondItem="jkU-fm-juW" secondAttribute="centerX" id="Tlz-XW-ATE"/>
+                            <constraint firstItem="rgn-jT-feH" firstAttribute="top" secondItem="jkU-fm-juW" secondAttribute="top" constant="20" id="vSj-ZY-hFT"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="Jxv-or-hHW">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jIL-Uy-xbZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2908.6956521739135" y="85.714285714285708"/>
+        </scene>
+        <!--Stat-->
+        <scene sceneID="jOa-TT-x0h">
+            <objects>
+                <viewController id="ljd-9t-ioC" customClass="StatisticsViewController" customModule="My_Fitness_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FEc-oU-HUT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My fitness diary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4Y-wN-mAW">
+                                <rect key="frame" x="89" y="20" width="236" height="42"/>
+                                <fontDescription key="fontDescription" name="Optima-Italic" family="Optima" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Qv-3e-IHE"/>
+                        <color key="backgroundColor" red="0.42352938649999999" green="0.79215681550000006" blue="0.69803923369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="K4Y-wN-mAW" firstAttribute="centerX" secondItem="9Qv-3e-IHE" secondAttribute="centerX" id="Alj-CT-qtl"/>
+                            <constraint firstItem="K4Y-wN-mAW" firstAttribute="top" secondItem="9Qv-3e-IHE" secondAttribute="top" constant="20" id="fhj-sX-uwN"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Stat" id="hWh-l9-eAR">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="USI-QK-FEq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3646" y="86"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="6cQ-pV-usa">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="h8m-Be-FIS" customClass="SignUpViewController" customModule="My_Fitness_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="h8m-Be-FIS" customClass="SignUpViewController" customModule="My_Fitness_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bkW-U2-lOt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -312,12 +387,28 @@
                                     <action selector="createProfile:" destination="h8m-Be-FIS" eventType="touchUpInside" id="b0x-Cm-VbX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOx-T5-cnf">
+                                <rect key="frame" x="45" y="692" width="324" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Bhl-Mw-nym"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="324" id="upV-wM-6oD"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GO BACK"/>
+                                <connections>
+                                    <action selector="backToLogIn:" destination="h8m-Be-FIS" eventType="touchUpInside" id="6YA-VI-HtZ"/>
+                                    <segue destination="IbA-78-kFQ" kind="unwind" unwindAction="unwindSegueToMainScreenWithSegue:" id="tse-yA-yFE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9b0-Px-N9p"/>
                         <color key="backgroundColor" red="0.42352938649999999" green="0.79215681550000006" blue="0.69803923369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="AJg-0f-nrx" firstAttribute="centerX" secondItem="9b0-Px-N9p" secondAttribute="centerX" id="9AO-1X-nmm"/>
+                            <constraint firstItem="OOx-T5-cnf" firstAttribute="centerX" secondItem="9b0-Px-N9p" secondAttribute="centerX" id="9Lb-l5-wNH"/>
                             <constraint firstItem="AJg-0f-nrx" firstAttribute="leading" secondItem="9b0-Px-N9p" secondAttribute="leading" constant="45" id="LQ8-55-rgo"/>
+                            <constraint firstItem="OOx-T5-cnf" firstAttribute="top" secondItem="YYK-hB-l2D" secondAttribute="bottom" constant="29" id="MIy-SD-0zN"/>
                             <constraint firstItem="n7i-bg-aUC" firstAttribute="top" secondItem="9b0-Px-N9p" secondAttribute="top" constant="69" id="PUl-hn-aNJ"/>
                             <constraint firstItem="9b0-Px-N9p" firstAttribute="trailing" secondItem="AJg-0f-nrx" secondAttribute="trailing" constant="45" id="Tvv-IB-5CO"/>
                             <constraint firstItem="n7i-bg-aUC" firstAttribute="centerX" secondItem="9b0-Px-N9p" secondAttribute="centerX" id="ib1-WY-YnU"/>
@@ -328,6 +419,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="5nS-UQ-rVl"/>
                     <connections>
+                        <outlet property="backButton" destination="OOx-T5-cnf" id="LSc-hg-0Ve"/>
                         <outlet property="birthdayTextField" destination="UsJ-zS-Mbh" id="zIA-nQ-MKS"/>
                         <outlet property="createLabel" destination="n7i-bg-aUC" id="u48-TK-IOf"/>
                         <outlet property="createProfileButton" destination="YYK-hB-l2D" id="mvq-pD-oSd"/>
@@ -338,8 +430,31 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HV2-Kw-LqE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="IbA-78-kFQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="715.94202898550725" y="85.714285714285708"/>
+            <point key="canvasLocation" x="714.49275362318849" y="85.714285714285708"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Vb5-8n-Mlr">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="pQz-yK-rI6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Jai-Fx-ajv"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Bj-VY-YuY">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tCp-pd-MLR" kind="relationship" relationship="viewControllers" id="rpj-CJ-Nbj"/>
+                        <segue destination="A5d-nd-QTy" kind="relationship" relationship="viewControllers" id="nH5-rm-4FA"/>
+                        <segue destination="ljd-9t-ioC" kind="relationship" relationship="viewControllers" id="96b-pS-Ez2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OB1-w5-Jcl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1418.840579710145" y="85.714285714285708"/>
         </scene>
     </scenes>
     <resources>

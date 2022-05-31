@@ -23,6 +23,10 @@ class LogInViewController: UIViewController {
     @IBAction func register(_ sender: UIButton) {
     }
     
+    @IBAction func unwindSegueToMainScreen(segue: UIStoryboardSegue) {
+            
+        }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
            self.view.endEditing(true)
        }

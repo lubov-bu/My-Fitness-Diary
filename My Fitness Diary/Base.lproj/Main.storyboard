@@ -188,7 +188,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AJg-0f-nrx">
-                                <rect key="frame" x="45" y="209" width="324" height="345"/>
+                                <rect key="frame" x="45" y="205" width="324" height="345"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KFn-qY-Y5d">
                                         <rect key="frame" x="0.0" y="0.0" width="324" height="45"/>
@@ -321,8 +321,8 @@
                             <constraint firstItem="n7i-bg-aUC" firstAttribute="top" secondItem="9b0-Px-N9p" secondAttribute="top" constant="69" id="PUl-hn-aNJ"/>
                             <constraint firstItem="9b0-Px-N9p" firstAttribute="trailing" secondItem="AJg-0f-nrx" secondAttribute="trailing" constant="45" id="Tvv-IB-5CO"/>
                             <constraint firstItem="n7i-bg-aUC" firstAttribute="centerX" secondItem="9b0-Px-N9p" secondAttribute="centerX" id="ib1-WY-YnU"/>
-                            <constraint firstItem="YYK-hB-l2D" firstAttribute="top" secondItem="AJg-0f-nrx" secondAttribute="bottom" constant="59" id="oiS-Ks-otD"/>
-                            <constraint firstItem="AJg-0f-nrx" firstAttribute="top" secondItem="n7i-bg-aUC" secondAttribute="bottom" constant="54.5" id="tgp-Nk-kQI"/>
+                            <constraint firstItem="YYK-hB-l2D" firstAttribute="top" secondItem="AJg-0f-nrx" secondAttribute="bottom" constant="63" id="oiS-Ks-otD"/>
+                            <constraint firstItem="AJg-0f-nrx" firstAttribute="top" secondItem="n7i-bg-aUC" secondAttribute="bottom" constant="50.5" id="tgp-Nk-kQI"/>
                             <constraint firstItem="YYK-hB-l2D" firstAttribute="centerX" secondItem="9b0-Px-N9p" secondAttribute="centerX" id="zSd-hH-xxj"/>
                         </constraints>
                     </view>

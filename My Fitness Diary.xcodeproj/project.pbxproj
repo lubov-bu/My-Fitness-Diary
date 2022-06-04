@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		901BF5B1284BCD0F0000BF73 /* UIColor+borderColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901BF5B0284BCD0F0000BF73 /* UIColor+borderColor.swift */; };
 		903FCE38283BCC2700A02DB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903FCE37283BCC2700A02DB0 /* AppDelegate.swift */; };
 		903FCE3A283BCC2700A02DB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903FCE39283BCC2700A02DB0 /* SceneDelegate.swift */; };
 		903FCE3C283BCC2700A02DB0 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903FCE3B283BCC2700A02DB0 /* LogInViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		901BF5B0284BCD0F0000BF73 /* UIColor+borderColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+borderColor.swift"; sourceTree = "<group>"; };
 		903FCE34283BCC2700A02DB0 /* My Fitness Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Fitness Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		903FCE37283BCC2700A02DB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		903FCE39283BCC2700A02DB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		901BF5AD284BCB0F0000BF73 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				901BF5B0284BCD0F0000BF73 /* UIColor+borderColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		903FCE2B283BCC2700A02DB0 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +74,7 @@
 		903FCE36283BCC2700A02DB0 /* My Fitness Diary */ = {
 			isa = PBXGroup;
 			children = (
+				901BF5AD284BCB0F0000BF73 /* Extensions */,
 				903FCE4B283BE0DD00A02DB0 /* Screens */,
 				903FCE37283BCC2700A02DB0 /* AppDelegate.swift */,
 				903FCE39283BCC2700A02DB0 /* SceneDelegate.swift */,
@@ -239,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				909709AC284641B300A0B665 /* ProfileViewController.swift in Sources */,
+				901BF5B1284BCD0F0000BF73 /* UIColor+borderColor.swift in Sources */,
 				903FCE3C283BCC2700A02DB0 /* LogInViewController.swift in Sources */,
 				903FCE38283BCC2700A02DB0 /* AppDelegate.swift in Sources */,
 				903FCE3A283BCC2700A02DB0 /* SceneDelegate.swift in Sources */,

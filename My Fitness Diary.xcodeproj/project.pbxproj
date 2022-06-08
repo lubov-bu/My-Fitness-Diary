@@ -14,7 +14,8 @@
 		903FCE3F283BCC2700A02DB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 903FCE3D283BCC2700A02DB0 /* Main.storyboard */; };
 		903FCE41283BCC2B00A02DB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 903FCE40283BCC2B00A02DB0 /* Assets.xcassets */; };
 		903FCE44283BCC2B00A02DB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 903FCE42283BCC2B00A02DB0 /* LaunchScreen.storyboard */; };
-		906839DD283F86A600F52968 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906839DC283F86A600F52968 /* MainViewController.swift */; };
+		9048BAE9284FA5ED00CA23D3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9048BAE8284FA5ED00CA23D3 /* MainViewController.swift */; };
+		905E64EC2850E43C0072E3AF /* AddMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905E64EB2850E43C0072E3AF /* AddMealViewController.swift */; };
 		906839E1283F95AD00F52968 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906839E0283F95AD00F52968 /* SignUpViewController.swift */; };
 		909709AC284641B300A0B665 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909709AB284641B300A0B665 /* ProfileViewController.swift */; };
 		909709B0284641DD00A0B665 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909709AF284641DD00A0B665 /* StatisticsViewController.swift */; };
@@ -30,7 +31,8 @@
 		903FCE40283BCC2B00A02DB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		903FCE43283BCC2B00A02DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		903FCE45283BCC2B00A02DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		906839DC283F86A600F52968 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9048BAE8284FA5ED00CA23D3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		905E64EB2850E43C0072E3AF /* AddMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealViewController.swift; sourceTree = "<group>"; };
 		906839E0283F95AD00F52968 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		909709AB284641B300A0B665 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		909709AF284641DD00A0B665 /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		903FCE4B283BE0DD00A02DB0 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				905E64E92850E4140072E3AF /* Adding */,
 				909709AD284641C300A0B665 /* Statistics */,
 				909709A92846419600A0B665 /* Profile */,
 				906839DE283F958A00F52968 /* SignUp */,
@@ -125,7 +128,23 @@
 		903FCE4F283BE6B800A02DB0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				906839DC283F86A600F52968 /* MainViewController.swift */,
+				9048BAE8284FA5ED00CA23D3 /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		905E64E92850E4140072E3AF /* Adding */ = {
+			isa = PBXGroup;
+			children = (
+				905E64EA2850E4230072E3AF /* View */,
+			);
+			path = Adding;
+			sourceTree = "<group>";
+		};
+		905E64EA2850E4230072E3AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				905E64EB2850E43C0072E3AF /* AddMealViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -252,11 +271,12 @@
 				909709AC284641B300A0B665 /* ProfileViewController.swift in Sources */,
 				901BF5B1284BCD0F0000BF73 /* UIColor+borderColor.swift in Sources */,
 				903FCE3C283BCC2700A02DB0 /* LogInViewController.swift in Sources */,
+				905E64EC2850E43C0072E3AF /* AddMealViewController.swift in Sources */,
 				903FCE38283BCC2700A02DB0 /* AppDelegate.swift in Sources */,
 				903FCE3A283BCC2700A02DB0 /* SceneDelegate.swift in Sources */,
-				906839DD283F86A600F52968 /* MainViewController.swift in Sources */,
 				906839E1283F95AD00F52968 /* SignUpViewController.swift in Sources */,
 				909709B0284641DD00A0B665 /* StatisticsViewController.swift in Sources */,
+				9048BAE9284FA5ED00CA23D3 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

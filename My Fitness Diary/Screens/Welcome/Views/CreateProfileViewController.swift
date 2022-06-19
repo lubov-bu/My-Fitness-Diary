@@ -11,9 +11,6 @@ class CreateProfileViewController: UIViewController {
 
     
     @IBOutlet weak var nameTF: UITextField!
-    @IBOutlet weak var birthDateTF: UITextField!
-    @IBOutlet weak var heightTF: UITextField!
-    @IBOutlet weak var weigtTF: UITextField!
     
     @IBOutlet weak var nextButton: UIButton!
     
@@ -23,6 +20,8 @@ class CreateProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameTF.underlined()
+        nameTF.becomeFirstResponder()
 
     }
     

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Aq-VE-Iry">
-    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -16,14 +16,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rm-AW-nWw">
-                                <rect key="frame" x="20" y="97" width="233" height="57"/>
-                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="45"/>
+                                <rect key="frame" x="20" y="97" width="204" height="41.5"/>
+                                <fontDescription key="fontDescription" name="Optima-Italic" family="Optima" pointSize="35"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&amp; drink reminder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTa-0p-P66">
-                                <rect key="frame" x="99" y="162" width="275" height="57"/>
-                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="45"/>
+                                <rect key="frame" x="118.5" y="146.5" width="255.5" height="41.5"/>
+                                <fontDescription key="fontDescription" name="Optima-Italic" family="Optima" pointSize="35"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -33,18 +33,18 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="7ZD-mj-uY5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Let's start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
+                                        <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="bOd-XF-Gs4" kind="show" id="I4N-ih-U2Y"/>
+                                    <segue destination="gDF-V1-f4S" kind="show" id="I4N-ih-U2Y"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -67,185 +67,168 @@
             </objects>
             <point key="canvasLocation" x="-136.23188405797103" y="49.553571428571423"/>
         </scene>
-        <!--Create Profile View Controller-->
+        <!--Your name-->
         <scene sceneID="7vI-5o-0HX">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="bOd-XF-Gs4" customClass="CreateProfileViewController" customModule="My_Fitness_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YDg-c0-phu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncy-XE-LSW">
-                                <rect key="frame" x="162.5" y="122" width="89.5" height="44.5"/>
-                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="35"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="4G7-X8-RsX">
-                                <rect key="frame" x="45" y="231.5" width="324" height="329"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yls-a3-J3Z">
-                                        <rect key="frame" x="0.0" y="0.0" width="324" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="x9g-V2-Ru2"/>
-                                        </constraints>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="15"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Birth Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W2k-WP-XND">
-                                        <rect key="frame" x="0.0" y="93" width="324" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="yoc-xK-U8B"/>
-                                        </constraints>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="15"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Height (cm)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fYh-hI-Xlf">
-                                        <rect key="frame" x="0.0" y="186" width="324" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="ZVl-Sc-ODq"/>
-                                        </constraints>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="15"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight (kg)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Quu-JC-piW">
-                                        <rect key="frame" x="0.0" y="279" width="324" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="nqm-Jw-3GR"/>
-                                        </constraints>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="15"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1s7-qX-gGp">
-                                <rect key="frame" x="45" y="756" width="324" height="50"/>
+                                <rect key="frame" x="45" y="736" width="324" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="GfU-P1-4Gh"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
+                                        <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="rJF-se-eby" kind="show" id="kle-kg-jvj"/>
+                                    <segue destination="jGY-M9-3k8" kind="show" id="piT-yj-VBa"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bNL-MS-FW9">
+                                <rect key="frame" x="60" y="76" width="294" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ndm-wG-HCi"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JqE-49-yws"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Ncy-XE-LSW" firstAttribute="centerX" secondItem="JqE-49-yws" secondAttribute="centerX" id="7gq-5v-naH"/>
-                            <constraint firstItem="4G7-X8-RsX" firstAttribute="leading" secondItem="JqE-49-yws" secondAttribute="leading" constant="45" id="AZW-5S-ukT"/>
-                            <constraint firstItem="4G7-X8-RsX" firstAttribute="top" secondItem="Ncy-XE-LSW" secondAttribute="bottom" constant="65" id="BT4-ZJ-7Y7"/>
-                            <constraint firstItem="4G7-X8-RsX" firstAttribute="centerX" secondItem="JqE-49-yws" secondAttribute="centerX" id="OCa-Yy-dNM"/>
-                            <constraint firstItem="Ncy-XE-LSW" firstAttribute="top" secondItem="JqE-49-yws" secondAttribute="top" constant="78" id="hNB-iF-I2O"/>
-                            <constraint firstItem="JqE-49-yws" firstAttribute="trailing" secondItem="4G7-X8-RsX" secondAttribute="trailing" constant="45" id="hsD-t2-ped"/>
+                            <constraint firstItem="bNL-MS-FW9" firstAttribute="top" secondItem="JqE-49-yws" secondAttribute="top" constant="20" id="m38-8n-736"/>
                             <constraint firstItem="JqE-49-yws" firstAttribute="bottom" secondItem="1s7-qX-gGp" secondAttribute="bottom" constant="56" id="mik-Tc-FeJ"/>
+                            <constraint firstItem="bNL-MS-FW9" firstAttribute="leading" secondItem="JqE-49-yws" secondAttribute="leading" constant="60" id="qCO-yi-VZr"/>
                             <constraint firstItem="1s7-qX-gGp" firstAttribute="leading" secondItem="JqE-49-yws" secondAttribute="leading" constant="45" id="uGB-6t-Aeh"/>
+                            <constraint firstItem="JqE-49-yws" firstAttribute="trailing" secondItem="bNL-MS-FW9" secondAttribute="trailing" constant="60" id="vAM-xD-46X"/>
                             <constraint firstItem="JqE-49-yws" firstAttribute="trailing" secondItem="1s7-qX-gGp" secondAttribute="trailing" constant="45" id="xtW-xd-HdS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="vD5-he-tDJ"/>
+                    <navigationItem key="navigationItem" title="Your name" id="vD5-he-tDJ">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="FjO-wa-jyP"/>
+                    </navigationItem>
                     <connections>
-                        <outlet property="birthDateTF" destination="W2k-WP-XND" id="uUL-1C-34U"/>
-                        <outlet property="heightTF" destination="fYh-hI-Xlf" id="e59-wS-zsg"/>
-                        <outlet property="nameTF" destination="yls-a3-J3Z" id="v7R-qL-1BG"/>
+                        <outlet property="nameTF" destination="bNL-MS-FW9" id="Giq-tE-KEo"/>
                         <outlet property="nextButton" destination="1s7-qX-gGp" id="LFc-pD-mfW"/>
-                        <outlet property="weigtTF" destination="Quu-JC-piW" id="aqo-u0-oOb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2XX-nt-hpc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="554" y="50"/>
+            <point key="canvasLocation" x="1246" y="50"/>
+        </scene>
+        <!--Your weight-->
+        <scene sceneID="BW9-Bc-JkO">
+            <objects>
+                <viewController id="ZWb-YN-EaH" customClass="WeightViewController" customModule="My_Fitness_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ua2-ae-hjx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEh-RM-kv0">
+                                <rect key="frame" x="45" y="736" width="324" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="V30-MP-pW0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="rJF-se-eby" kind="show" id="BaT-0H-hZh"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o9J-Bp-vBq">
+                                <rect key="frame" x="45" y="76" width="324" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CJf-lW-ikb"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nyI-u8-2yI"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gEh-RM-kv0" firstAttribute="leading" secondItem="nyI-u8-2yI" secondAttribute="leading" constant="45" id="1LB-gH-tLn"/>
+                            <constraint firstItem="o9J-Bp-vBq" firstAttribute="top" secondItem="nyI-u8-2yI" secondAttribute="top" constant="20" id="QTu-TV-Kw5"/>
+                            <constraint firstItem="nyI-u8-2yI" firstAttribute="trailing" secondItem="gEh-RM-kv0" secondAttribute="trailing" constant="45" id="a38-LZ-XR1"/>
+                            <constraint firstItem="o9J-Bp-vBq" firstAttribute="leading" secondItem="nyI-u8-2yI" secondAttribute="leading" constant="45" id="el1-UT-7EA"/>
+                            <constraint firstItem="nyI-u8-2yI" firstAttribute="trailing" secondItem="o9J-Bp-vBq" secondAttribute="trailing" constant="45" id="rqd-eT-gWV"/>
+                            <constraint firstItem="nyI-u8-2yI" firstAttribute="bottom" secondItem="gEh-RM-kv0" secondAttribute="bottom" constant="56" id="z3r-dw-ZmY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Your weight" id="r77-iN-wzj">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="6tt-6z-Psy"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nextButton" destination="gEh-RM-kv0" id="17w-C0-nDW"/>
+                        <outlet property="weightTF" destination="o9J-Bp-vBq" id="06y-Rn-3bl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OyJ-EV-0GB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3239" y="50"/>
         </scene>
         <!--Goals View Controller-->
         <scene sceneID="Pei-bj-vCQ">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="rJF-se-eby" customClass="GoalsViewController" customModule="My_Fitness_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1PY-1u-YER">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your goal?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rb5-xu-aV6">
-                                <rect key="frame" x="83" y="122" width="248" height="44.5"/>
-                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="35"/>
+                                <rect key="frame" x="88" y="134" width="238" height="36"/>
+                                <fontDescription key="fontDescription" name="Optima-Italic" family="Optima" pointSize="30"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="nNz-lH-PBa">
-                                <rect key="frame" x="45" y="231.5" width="324" height="236"/>
+                                <rect key="frame" x="45" y="235" width="324" height="236"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpS-UW-r7K">
                                         <rect key="frame" x="0.0" y="0.0" width="324" height="50"/>
@@ -253,20 +236,20 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="spI-Al-aJx"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Optima-Italic" family="Optima" pointSize="18"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Losе weight">
+                                        <state key="normal" title="Lose weight">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="15"/>
+                                                <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                 <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="2"/>
+                                                <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
@@ -276,20 +259,20 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="hvZ-6X-ICd"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Optima-Italic" family="Optima" pointSize="18"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Gain weight">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="15"/>
+                                                <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                 <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="2"/>
+                                                <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
@@ -299,44 +282,41 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="1wy-Sg-HRE"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Optima-Italic" family="Optima" pointSize="18"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Keep weight">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="15"/>
+                                                <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                 <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="2"/>
+                                                <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apj-fU-GTr">
-                                <rect key="frame" x="45" y="756" width="324" height="50"/>
+                                <rect key="frame" x="45" y="736" width="324" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="XvK-wc-d8n"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
+                                        <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="jGY-M9-3k8" kind="show" id="8et-Sh-ORW"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fnG-u7-uz5"/>
@@ -363,35 +343,175 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xzb-g0-e8u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1229" y="50"/>
+            <point key="canvasLocation" x="3917" y="50"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="xYW-wT-eCZ">
+        <!--Your height-->
+        <scene sceneID="Rpp-mY-cBy">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="jGY-M9-3k8" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="650-sk-C3t">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController id="Qfr-Hu-ukt" customClass="HeightViewController" customModule="My_Fitness_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xdd-70-14K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculating your plan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIe-uH-aPc">
-                                <rect key="frame" x="69" y="122" width="276" height="45"/>
-                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="35"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fb8-xb-OWC">
+                                <rect key="frame" x="45" y="76" width="324" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PdU-yX-rAa"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWT-oP-sCd">
+                                <rect key="frame" x="45" y="736" width="324" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ouo-t6-t4V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ZWb-YN-EaH" kind="show" id="e1F-TH-9bZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bU6-xF-O1N"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bU6-xF-O1N" firstAttribute="trailing" secondItem="Fb8-xb-OWC" secondAttribute="trailing" constant="45" id="LOw-tO-kfv"/>
+                            <constraint firstItem="bU6-xF-O1N" firstAttribute="trailing" secondItem="xWT-oP-sCd" secondAttribute="trailing" constant="45" id="MDV-1R-l6J"/>
+                            <constraint firstItem="xWT-oP-sCd" firstAttribute="leading" secondItem="bU6-xF-O1N" secondAttribute="leading" constant="45" id="MYo-ie-exo"/>
+                            <constraint firstItem="bU6-xF-O1N" firstAttribute="bottom" secondItem="xWT-oP-sCd" secondAttribute="bottom" constant="56" id="YUD-Kr-d9Y"/>
+                            <constraint firstItem="Fb8-xb-OWC" firstAttribute="top" secondItem="bU6-xF-O1N" secondAttribute="top" constant="20" id="i0m-te-MPT"/>
+                            <constraint firstItem="Fb8-xb-OWC" firstAttribute="leading" secondItem="bU6-xF-O1N" secondAttribute="leading" constant="45" id="ruX-ux-ayd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Your height" id="94I-Tk-Uxr">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="hAn-BW-ziU"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="heightTF" destination="Fb8-xb-OWC" id="Vkp-9V-p5d"/>
+                        <outlet property="nextButton" destination="xWT-oP-sCd" id="hAu-h2-krf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Au-zZ-zEC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2581" y="50"/>
+        </scene>
+        <!--Your birthday-->
+        <scene sceneID="xYW-wT-eCZ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="saR-oC-A2R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController modalPresentationStyle="fullScreen" id="jGY-M9-3k8" customClass="BirthDayViewController" customModule="My_Fitness_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="650-sk-C3t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kQ-Xc-eQQ">
+                                <rect key="frame" x="45" y="736" width="324" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vzg-eY-tbF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Qfr-Hu-ukt" kind="show" id="hej-IU-CIb"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zl5-85-nUE">
+                                <rect key="frame" x="45" y="76" width="324" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XbJ-5O-vvj"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Goe-Ji-lIs"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="SIe-uH-aPc" firstAttribute="top" secondItem="Goe-Ji-lIs" secondAttribute="top" constant="78" id="sUQ-2w-cyJ"/>
-                            <constraint firstItem="SIe-uH-aPc" firstAttribute="centerX" secondItem="Goe-Ji-lIs" secondAttribute="centerX" id="yt3-bO-Qbv"/>
+                            <constraint firstItem="8kQ-Xc-eQQ" firstAttribute="leading" secondItem="Goe-Ji-lIs" secondAttribute="leading" constant="45" id="Hd2-Mg-vLs"/>
+                            <constraint firstItem="Goe-Ji-lIs" firstAttribute="bottom" secondItem="8kQ-Xc-eQQ" secondAttribute="bottom" constant="56" id="I7Y-Ov-yrO"/>
+                            <constraint firstItem="Zl5-85-nUE" firstAttribute="leading" secondItem="Goe-Ji-lIs" secondAttribute="leading" constant="45" id="O7a-AG-kCV"/>
+                            <constraint firstItem="Zl5-85-nUE" firstAttribute="top" secondItem="Goe-Ji-lIs" secondAttribute="top" constant="20" id="gEd-TC-6rW"/>
+                            <constraint firstItem="Goe-Ji-lIs" firstAttribute="trailing" secondItem="Zl5-85-nUE" secondAttribute="trailing" constant="45" id="qUq-hj-TdJ"/>
+                            <constraint firstItem="Goe-Ji-lIs" firstAttribute="trailing" secondItem="8kQ-Xc-eQQ" secondAttribute="trailing" constant="45" id="sYQ-iF-dhu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Pt9-FX-itN"/>
+                    <navigationItem key="navigationItem" title="Your birthday" id="Pt9-FX-itN">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="rdx-BX-d8F"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="birthDayTF" destination="Zl5-85-nUE" id="jGD-Ko-fgx"/>
+                        <outlet property="nextButton" destination="8kQ-Xc-eQQ" id="L80-HN-pav"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="saR-oC-A2R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1939" y="50"/>
+            <point key="canvasLocation" x="1919" y="50"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6mI-0n-Xy5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="gDF-V1-f4S" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="eH7-tM-Ov0"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jUe-v3-7kQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Optima-Italic" family="Optima" pointSize="25"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bOd-XF-Gs4" kind="relationship" relationship="rootViewController" id="oCO-ne-UyG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bid-eN-fsO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="553.62318840579712" y="49.553571428571423"/>
         </scene>
     </scenes>
 </document>

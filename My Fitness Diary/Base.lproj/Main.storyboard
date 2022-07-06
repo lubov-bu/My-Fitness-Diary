@@ -95,13 +95,13 @@
                                     <segue destination="jGY-M9-3k8" kind="show" id="piT-yj-VBa"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bNL-MS-FW9">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bNL-MS-FW9">
                                 <rect key="frame" x="60" y="76" width="294" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ndm-wG-HCi"/>
                                 </constraints>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
@@ -130,6 +130,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Your name" id="vD5-he-tDJ">
                         <barButtonItem key="backBarButtonItem" title="Back" id="FjO-wa-jyP"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.fontColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </navigationItem>
                     <connections>
                         <outlet property="nameTF" destination="bNL-MS-FW9" id="Giq-tE-KEo"/>
@@ -174,7 +179,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="CJf-lW-ikb"/>
                                 </constraints>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                 <userDefinedRuntimeAttributes>
@@ -359,7 +364,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="PdU-yX-rAa"/>
                                 </constraints>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                 <userDefinedRuntimeAttributes>
@@ -421,7 +426,6 @@
         <!--Your birthday-->
         <scene sceneID="xYW-wT-eCZ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="saR-oC-A2R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController modalPresentationStyle="fullScreen" id="jGY-M9-3k8" customClass="BirthDayViewController" customModule="My_Fitness_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="650-sk-C3t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -453,7 +457,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="XbJ-5O-vvj"/>
                                 </constraints>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                 <userDefinedRuntimeAttributes>
@@ -488,6 +492,7 @@
                         <outlet property="nextButton" destination="8kQ-Xc-eQQ" id="L80-HN-pav"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="saR-oC-A2R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1919" y="50"/>
         </scene>

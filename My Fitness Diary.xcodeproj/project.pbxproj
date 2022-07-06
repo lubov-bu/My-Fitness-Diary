@@ -14,6 +14,7 @@
 		903FCE44283BCC2B00A02DB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 903FCE42283BCC2B00A02DB0 /* LaunchScreen.storyboard */; };
 		9048BAE9284FA5ED00CA23D3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9048BAE8284FA5ED00CA23D3 /* MainViewController.swift */; };
 		905E64EC2850E43C0072E3AF /* AddMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905E64EB2850E43C0072E3AF /* AddMealViewController.swift */; };
+		9065B5C32876099000D3F499 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9065B5C22876099000D3F499 /* Keyboard.swift */; };
 		907884D3285A74DF00C78D34 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907884D2285A74DF00C78D34 /* WelcomeViewController.swift */; };
 		909709AC284641B300A0B665 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909709AB284641B300A0B665 /* ProfileViewController.swift */; };
 		909709B0284641DD00A0B665 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909709AF284641DD00A0B665 /* StatisticsViewController.swift */; };
@@ -35,6 +36,7 @@
 		903FCE45283BCC2B00A02DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9048BAE8284FA5ED00CA23D3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		905E64EB2850E43C0072E3AF /* AddMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealViewController.swift; sourceTree = "<group>"; };
+		9065B5C22876099000D3F499 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		907884D2285A74DF00C78D34 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		909709AB284641B300A0B665 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		909709AF284641DD00A0B665 /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		903FCE36283BCC2700A02DB0 /* My Fitness Diary */ = {
 			isa = PBXGroup;
 			children = (
+				9065B5C12876094C00D3F499 /* Utils */,
 				901BF5AD284BCB0F0000BF73 /* Extensions */,
 				903FCE4B283BE0DD00A02DB0 /* Screens */,
 				903FCE37283BCC2700A02DB0 /* AppDelegate.swift */,
@@ -138,6 +141,14 @@
 				905E64EB2850E43C0072E3AF /* AddMealViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		9065B5C12876094C00D3F499 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9065B5C22876099000D3F499 /* Keyboard.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		907884D0285A6F5400C78D34 /* Welcome */ = {
@@ -270,6 +281,7 @@
 				907884D3285A74DF00C78D34 /* WelcomeViewController.swift in Sources */,
 				90C3AF9C285F86FF00E0891D /* HeightViewController.swift in Sources */,
 				901BF5B1284BCD0F0000BF73 /* UIColor+borderColor.swift in Sources */,
+				9065B5C32876099000D3F499 /* Keyboard.swift in Sources */,
 				905E64EC2850E43C0072E3AF /* AddMealViewController.swift in Sources */,
 				903FCE38283BCC2700A02DB0 /* AppDelegate.swift in Sources */,
 				903FCE3A283BCC2700A02DB0 /* SceneDelegate.swift in Sources */,

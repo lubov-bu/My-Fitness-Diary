@@ -14,6 +14,7 @@ class CreateProfileViewController: UIViewController {
     
     @IBOutlet weak var nextButton: UIButton!
     
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
            self.view.endEditing(true)
        }
@@ -21,10 +22,10 @@ class CreateProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nameTF.underlined()
-        nameTF.becomeFirstResponder()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
 
     }
     
-
-
 }

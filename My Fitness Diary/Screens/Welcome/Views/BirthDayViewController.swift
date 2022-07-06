@@ -17,6 +17,7 @@ class BirthDayViewController: UIViewController {
         super.viewDidLoad()
         birthDayTF.underlined()
         birthDayTF.becomeFirstResponder()
+        
     }
 
 

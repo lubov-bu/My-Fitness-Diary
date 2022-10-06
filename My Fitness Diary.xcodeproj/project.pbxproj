@@ -14,16 +14,12 @@
 		903FCE44283BCC2B00A02DB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 903FCE42283BCC2B00A02DB0 /* LaunchScreen.storyboard */; };
 		9048BAE9284FA5ED00CA23D3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9048BAE8284FA5ED00CA23D3 /* MainViewController.swift */; };
 		905E64EC2850E43C0072E3AF /* AddMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905E64EB2850E43C0072E3AF /* AddMealViewController.swift */; };
-		9065B5C32876099000D3F499 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9065B5C22876099000D3F499 /* Keyboard.swift */; };
 		907884D3285A74DF00C78D34 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907884D2285A74DF00C78D34 /* WelcomeViewController.swift */; };
+		907B7DBC28EED1B400C10CFC /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907B7DBB28EED1B400C10CFC /* CreateProfileViewController.swift */; };
+		907B7DC028EF18A100C10CFC /* Move content up.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907B7DBF28EF18A100C10CFC /* Move content up.swift */; };
 		909709AC284641B300A0B665 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909709AB284641B300A0B665 /* ProfileViewController.swift */; };
 		909709B0284641DD00A0B665 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909709AF284641DD00A0B665 /* StatisticsViewController.swift */; };
-		90AD28FD285BC4D800BED419 /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AD28FC285BC4D800BED419 /* CreateProfileViewController.swift */; };
-		90AD28FF285BCA0D00BED419 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AD28FE285BCA0D00BED419 /* GoalsViewController.swift */; };
 		90C3AF96285F858200E0891D /* UITextField + border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C3AF95285F858200E0891D /* UITextField + border.swift */; };
-		90C3AF98285F86EB00E0891D /* BirthDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C3AF97285F86EB00E0891D /* BirthDayViewController.swift */; };
-		90C3AF9A285F86F800E0891D /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C3AF99285F86F800E0891D /* WeightViewController.swift */; };
-		90C3AF9C285F86FF00E0891D /* HeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C3AF9B285F86FF00E0891D /* HeightViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,16 +32,12 @@
 		903FCE45283BCC2B00A02DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9048BAE8284FA5ED00CA23D3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		905E64EB2850E43C0072E3AF /* AddMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealViewController.swift; sourceTree = "<group>"; };
-		9065B5C22876099000D3F499 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		907884D2285A74DF00C78D34 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		907B7DBB28EED1B400C10CFC /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
+		907B7DBF28EF18A100C10CFC /* Move content up.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Move content up.swift"; sourceTree = "<group>"; };
 		909709AB284641B300A0B665 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		909709AF284641DD00A0B665 /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
-		90AD28FC285BC4D800BED419 /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
-		90AD28FE285BCA0D00BED419 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
 		90C3AF95285F858200E0891D /* UITextField + border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + border.swift"; sourceTree = "<group>"; };
-		90C3AF97285F86EB00E0891D /* BirthDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthDayViewController.swift; sourceTree = "<group>"; };
-		90C3AF99285F86F800E0891D /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
-		90C3AF9B285F86FF00E0891D /* HeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +56,7 @@
 			children = (
 				901BF5B0284BCD0F0000BF73 /* UIColor+borderColor.swift */,
 				90C3AF95285F858200E0891D /* UITextField + border.swift */,
+				907B7DBF28EF18A100C10CFC /* Move content up.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -146,7 +139,6 @@
 		9065B5C12876094C00D3F499 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				9065B5C22876099000D3F499 /* Keyboard.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -163,11 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				907884D2285A74DF00C78D34 /* WelcomeViewController.swift */,
-				90AD28FC285BC4D800BED419 /* CreateProfileViewController.swift */,
-				90C3AF97285F86EB00E0891D /* BirthDayViewController.swift */,
-				90C3AF99285F86F800E0891D /* WeightViewController.swift */,
-				90C3AF9B285F86FF00E0891D /* HeightViewController.swift */,
-				90AD28FE285BCA0D00BED419 /* GoalsViewController.swift */,
+				907B7DBB28EED1B400C10CFC /* CreateProfileViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -275,20 +263,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				90C3AF96285F858200E0891D /* UITextField + border.swift in Sources */,
-				90C3AF98285F86EB00E0891D /* BirthDayViewController.swift in Sources */,
 				909709AC284641B300A0B665 /* ProfileViewController.swift in Sources */,
-				90AD28FD285BC4D800BED419 /* CreateProfileViewController.swift in Sources */,
 				907884D3285A74DF00C78D34 /* WelcomeViewController.swift in Sources */,
-				90C3AF9C285F86FF00E0891D /* HeightViewController.swift in Sources */,
+				907B7DC028EF18A100C10CFC /* Move content up.swift in Sources */,
 				901BF5B1284BCD0F0000BF73 /* UIColor+borderColor.swift in Sources */,
-				9065B5C32876099000D3F499 /* Keyboard.swift in Sources */,
 				905E64EC2850E43C0072E3AF /* AddMealViewController.swift in Sources */,
 				903FCE38283BCC2700A02DB0 /* AppDelegate.swift in Sources */,
 				903FCE3A283BCC2700A02DB0 /* SceneDelegate.swift in Sources */,
 				909709B0284641DD00A0B665 /* StatisticsViewController.swift in Sources */,
+				907B7DBC28EED1B400C10CFC /* CreateProfileViewController.swift in Sources */,
 				9048BAE9284FA5ED00CA23D3 /* MainViewController.swift in Sources */,
-				90C3AF9A285F86F800E0891D /* WeightViewController.swift in Sources */,
-				90AD28FF285BCA0D00BED419 /* GoalsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

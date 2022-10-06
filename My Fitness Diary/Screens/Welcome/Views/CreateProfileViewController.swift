@@ -2,30 +2,56 @@
 //  CreateProfileViewController.swift
 //  My Fitness Diary
 //
-//  Created by Lubov Burbygina on 16.6.2022.
+//  Created by Lubov Burbygina on 6.10.2022.
 //
 
 import UIKit
 
 class CreateProfileViewController: UIViewController {
-
     
-    @IBOutlet weak var nameTF: UITextField!
     
-    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var NameTF: UITextField!
     
+    @IBOutlet weak var BirthDayTF: UITextField!
+    
+    @IBOutlet weak var HeightTF: UITextField!
+    
+    @IBOutlet weak var WeightTF: UITextField!
+    
+    @IBOutlet weak var MoveButton: NSLayoutConstraint!
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-           self.view.endEditing(true)
-       }
+        view.endEditing(true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameTF.underlined()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+     
+        NotificationCenter.default.addObserver(
+                    self,
+                    selector: #selector(self.keyboardWillShow),
+                    name: UIResponder.keyboardWillShowNotification,
+                    object: nil)
 
+                NotificationCenter.default.addObserver(
+                    self,
+                    selector: #selector(self.keyboardWillHide),
+                    name: UIResponder.keyboardWillHideNotification,
+                    object: nil)
+        
     }
     
+    @objc func keyboardWillShow(_ notification: NSNotification) {
+           // Move the view only when any Text Field is being edited
+        if NameTF.isEditing || BirthDayTF.isEditing || HeightTF.isEditing || WeightTF.isEditing {
+               moveViewWithKeyboard(notification: notification, viewBottomConstraint: self.MoveButton, keyboardWillShow: true)
+           }
+       }
+       
+       @objc func keyboardWillHide(_ notification: NSNotification) {
+           moveViewWithKeyboard(notification: notification, viewBottomConstraint: self.MoveButton, keyboardWillShow: false)
+       }
+
 }

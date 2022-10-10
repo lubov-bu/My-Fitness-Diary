@@ -13,6 +13,7 @@
 		903FCE3F283BCC2700A02DB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 903FCE3D283BCC2700A02DB0 /* Main.storyboard */; };
 		903FCE44283BCC2B00A02DB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 903FCE42283BCC2B00A02DB0 /* LaunchScreen.storyboard */; };
 		9048BAE9284FA5ED00CA23D3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9048BAE8284FA5ED00CA23D3 /* MainViewController.swift */; };
+		905C8C6E28F4A8930091E1B0 /* MyFitnessDiary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 905C8C6C28F4A8930091E1B0 /* MyFitnessDiary.xcdatamodeld */; };
 		905E64EC2850E43C0072E3AF /* AddMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905E64EB2850E43C0072E3AF /* AddMealViewController.swift */; };
 		907884D3285A74DF00C78D34 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907884D2285A74DF00C78D34 /* WelcomeViewController.swift */; };
 		907B7DBC28EED1B400C10CFC /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907B7DBB28EED1B400C10CFC /* CreateProfileViewController.swift */; };
@@ -31,6 +32,7 @@
 		903FCE43283BCC2B00A02DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		903FCE45283BCC2B00A02DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9048BAE8284FA5ED00CA23D3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		905C8C6D28F4A8930091E1B0 /* MyFitnessDiary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyFitnessDiary.xcdatamodel; sourceTree = "<group>"; };
 		905E64EB2850E43C0072E3AF /* AddMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealViewController.swift; sourceTree = "<group>"; };
 		907884D2285A74DF00C78D34 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		907B7DBB28EED1B400C10CFC /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				903FCE4B283BE0DD00A02DB0 /* Screens */,
 				903FCE37283BCC2700A02DB0 /* AppDelegate.swift */,
 				903FCE39283BCC2700A02DB0 /* SceneDelegate.swift */,
+				905C8C6C28F4A8930091E1B0 /* MyFitnessDiary.xcdatamodeld */,
 				903FCE3D283BCC2700A02DB0 /* Main.storyboard */,
 				903FCE42283BCC2B00A02DB0 /* LaunchScreen.storyboard */,
 				903FCE45283BCC2B00A02DB0 /* Info.plist */,
@@ -264,6 +267,7 @@
 			files = (
 				90C3AF96285F858200E0891D /* UITextField + border.swift in Sources */,
 				909709AC284641B300A0B665 /* ProfileViewController.swift in Sources */,
+				905C8C6E28F4A8930091E1B0 /* MyFitnessDiary.xcdatamodeld in Sources */,
 				907884D3285A74DF00C78D34 /* WelcomeViewController.swift in Sources */,
 				907B7DC028EF18A100C10CFC /* Move content up.swift in Sources */,
 				901BF5B1284BCD0F0000BF73 /* UIColor+borderColor.swift in Sources */,
@@ -488,6 +492,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		905C8C6C28F4A8930091E1B0 /* MyFitnessDiary.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				905C8C6D28F4A8930091E1B0 /* MyFitnessDiary.xcdatamodel */,
+			);
+			currentVersion = 905C8C6D28F4A8930091E1B0 /* MyFitnessDiary.xcdatamodel */;
+			path = MyFitnessDiary.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 903FCE2C283BCC2700A02DB0 /* Project object */;
 }

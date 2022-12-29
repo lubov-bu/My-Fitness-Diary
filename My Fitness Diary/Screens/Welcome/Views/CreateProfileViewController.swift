@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class CreateProfileViewController: UIViewController {
     
@@ -19,6 +20,10 @@ class CreateProfileViewController: UIViewController {
     @IBOutlet weak var WeightTF: UITextField!
     
     @IBOutlet weak var MoveButton: NSLayoutConstraint!
+
+    @IBAction func createAccount() {
+       
+    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)

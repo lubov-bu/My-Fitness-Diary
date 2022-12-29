@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		900878642908715D002B4203 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900878632908715D002B4203 /* CoreDataStack.swift */; };
 		901BF5B1284BCD0F0000BF73 /* UIColor+borderColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901BF5B0284BCD0F0000BF73 /* UIColor+borderColor.swift */; };
 		903FCE38283BCC2700A02DB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903FCE37283BCC2700A02DB0 /* AppDelegate.swift */; };
 		903FCE3A283BCC2700A02DB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903FCE39283BCC2700A02DB0 /* SceneDelegate.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		900878632908715D002B4203 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		901BF5B0284BCD0F0000BF73 /* UIColor+borderColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+borderColor.swift"; sourceTree = "<group>"; };
 		903FCE34283BCC2700A02DB0 /* My Fitness Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Fitness Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		903FCE37283BCC2700A02DB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90087862290870FE002B4203 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				900878632908715D002B4203 /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		901BF5AD284BCB0F0000BF73 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +92,7 @@
 		903FCE36283BCC2700A02DB0 /* My Fitness Diary */ = {
 			isa = PBXGroup;
 			children = (
+				90087862290870FE002B4203 /* CoreData */,
 				9065B5C12876094C00D3F499 /* Utils */,
 				901BF5AD284BCB0F0000BF73 /* Extensions */,
 				903FCE4B283BE0DD00A02DB0 /* Screens */,
@@ -271,6 +282,7 @@
 				907884D3285A74DF00C78D34 /* WelcomeViewController.swift in Sources */,
 				907B7DC028EF18A100C10CFC /* Move content up.swift in Sources */,
 				901BF5B1284BCD0F0000BF73 /* UIColor+borderColor.swift in Sources */,
+				900878642908715D002B4203 /* CoreDataStack.swift in Sources */,
 				905E64EC2850E43C0072E3AF /* AddMealViewController.swift in Sources */,
 				903FCE38283BCC2700A02DB0 /* AppDelegate.swift in Sources */,
 				903FCE3A283BCC2700A02DB0 /* SceneDelegate.swift in Sources */,
@@ -426,9 +438,11 @@
 				DEVELOPMENT_TEAM = BSRQGS458P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "My Fitness Diary/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -453,9 +467,11 @@
 				DEVELOPMENT_TEAM = BSRQGS458P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "My Fitness Diary/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
